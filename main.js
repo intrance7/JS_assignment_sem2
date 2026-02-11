@@ -18,11 +18,13 @@ form.addEventListener('submit', function(event) {
     const card = document.createElement('div');
     card.classList.add('card');
     card.innerHTML = `
-        <h2>${title}</h2>
-        <p>📆${date}</p>
-        <button>${cat}</button>
-        <p>${des}</p>
-        <div class="deletecard">❌</div>
+        <div class="cardheader">
+            <h2>${title}</h2>
+            <p>📆${date}</p>
+            <button>${cat}</button>
+            <p>${des}</p>
+            <div class="deletecard">❌</div>
+        </div>
     `;
 
     card.querySelector('.deletecard').addEventListener('click', function() {

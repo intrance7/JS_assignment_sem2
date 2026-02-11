@@ -184,3 +184,40 @@ form button:hover {
     color: #243b55;
     font-size: 18px;
 }
+
+
+.cardheader {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cardheader h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #243b55;
+}
+
+.cardheader p {
+    font-size: 14px;
+    color: #555;
+}
+
+
+.cardheader button {
+    width: fit-content;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    background: #e0e7ff;
+    color: #243b55;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.cardheader-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
