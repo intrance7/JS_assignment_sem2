@@ -18,14 +18,17 @@ form.addEventListener('submit', function(event) {
     const card = document.createElement('div');
     card.classList.add('card');
     card.innerHTML = `
-        <div class="cardheader">
+    <div class="cardheader">
+        <div class="cardheader-top">
             <h2>${title}</h2>
-            <p>📆${date}</p>
-            <button>${cat}</button>
-            <p>${des}</p>
             <div class="deletecard">❌</div>
         </div>
+        <p>📆 ${date}</p>
+        <button class="cat-btn">${cat}</button>
+        <p>${des}</p>
+    </div>
     `;
+
 
     card.querySelector('.deletecard').addEventListener('click', function() {
         card.remove();
